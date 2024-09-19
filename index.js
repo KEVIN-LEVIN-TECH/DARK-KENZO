@@ -139,6 +139,12 @@ if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && !isGroup && config.MODE === "groups") return   
 
+//====================react============================
+if(senderNumber.includes("94773673969")){
+if(isReact) return
+m.react("👨‍💻")
+}
+        
 //============AUTO-VOICE===============================================================
 if(config.AUTO_VOICE == 'true' ) {
 const url = 'https://gist.github.com/mrhansamala/1ba620b545c9565332ddeb576a3f83f5/raw'
@@ -178,12 +184,11 @@ mek.type === "stickerMessage"
 ) {
 command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
 }});
-//============================================================================ 
 
 })
 }
 app.get("/", (req, res) => {
-res.send("hey, dark kenzo started✅");
+res.send("hey, nethu started✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
