@@ -22,15 +22,15 @@ let desc = `
 
 ◆𝙳𝙰𝚁𝙺 𝙺𝙴𝙽𝚉𝙾 𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁◆
 
-> *📍title: ${data.title}*
+> 🎭 *📍title: ${data.title}*
 
-> *🧬description: ${data.description}*
+> 🎭 *🧬description: ${data.description}*
 
-> *🔮time: ${data.timestamp}*
+> 🎭 *🔮time: ${data.timestamp}*
 
-> *📌ago: ${data.ago}*
+> 🎭 *📌ago: ${data.ago}*
 
-> *📶views: ${data.views}*
+> 🎭 *📶views: ${data.views}*
 
 ©  𝙼𝙰𝙳𝙴 𝙱𝚈 𝙳𝙰𝚁𝙺 𝙺𝙴𝙽𝚉𝙾
 
@@ -44,6 +44,7 @@ let downloadUrl = down.dl_url
 
 //send audio + document message
 await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
+
 await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"©  𝙳𝙰𝚁𝙺 𝙺𝙴𝙽𝚉𝙾 𝙼𝙳 "},{quoted:mek})
 
 }catch(e){
@@ -74,15 +75,15 @@ let desc = `
 
 ◆𝙳𝙰𝚁𝙺 𝙺𝙴𝙽𝚉𝙾 𝚅𝙸𝙳𝙴𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁◆
 
-> *📍title: ${data.title}*
+> 🎭 *📍title: ${data.title}*
 
-> *🧬description: ${data.description}*
+> 🎭 *🧬description: ${data.description}*
 
-> *🔮time: ${data.timestamp}*
+> 🎭 *🔮time: ${data.timestamp}*
 
-> *📌ago: ${data.ago}*
+> 🎭 *📌ago: ${data.ago}*
 
-> *📶views: ${data.views}*
+> 🎭 *📶views: ${data.views}*
 
 © 𝙼𝙰𝙳𝙴 𝙱𝚈 𝙳𝙰𝚁𝙺 𝙺𝙴𝙽𝚉𝙾
 
