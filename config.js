@@ -6,7 +6,7 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "abARBSwZ#gGlv8_j3ndR-WCnhtHM_3m-3TDa8CqDAf_AdSYJod50",
-ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/GWMn14L/connet.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://i.postimg.cc/DZ72cPY0/Alive-Now.png",
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 MODE: process.env.MODE || "public",
 SUDO_NB: process.env.SUDO_NB || "94773673969",
