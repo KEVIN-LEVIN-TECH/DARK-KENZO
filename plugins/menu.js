@@ -101,7 +101,7 @@ ${menu.fun}
 > 🔮𝐌𝐀𝐃𝐄 𝐁𝐘 𝐌𝐑 𝐒𝐄𝐍𝐄𝐒𝐇🔮
    `
 
-return await conn.sendMessage(from,{image:{url:"https://i.ibb.co/GWMn14L/connet.jpg"},caption:madeMenu},{quoted:mek})
+return await conn.sendMessage(from,{image:{url:"https://i.postimg.cc/j5vR3nGX/Main-Menu.png"},caption:madeMenu},{quoted:mek})
     
 }catch(e){
 console.log(e)
