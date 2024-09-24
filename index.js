@@ -71,7 +71,7 @@ console.log('Bot connected to whatsapp ✅')
 
 let up = `DARK-KENZO-MD connected successful ✅\n\nPREFIX: ${prefix}`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/6d986fa37cb22f8e6717a.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.postimg.cc/50KZFBhZ/Main.png` }, caption: up })
 
 }
 })
@@ -150,7 +150,7 @@ m.react("👨‍💻")
 
 //===================================auto-voice//======================================== 
 if (config.AUTO_VOICE === 'true') {
-const url = 'https://raw.githubusercontent.com/DarkYasiyaofc/VOICE/main/Voice-Raw/FROZEN-V2'
+const url = 'https://gist.github.com/mrhansamala/1ba620b545c9565332ddeb576a3f83f5/raw'
 let { data } = await axios.get(url)
 for (vr in data){
 if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
