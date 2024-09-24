@@ -43,56 +43,52 @@ let madeMenu = `
 ╰━━━━━━━━━━━━━━━━━━━ 
 
 ╭━━━━━━━━━━━━━━━━━━━
- |   MAIN COMMAND
+ |   MAIN COMMAND ❏
 ╰━━━━━━━━━━━━━━━━━━━
  ${menu.main}
 ╰━━━━━━━━━━━━━━━━━━━
 
 ╭━━━━━━━━━━━━━━━━━━━
- |  DOWNLOAD COMMAND
+ |  DOWNLOAD COMMAND ❏
 ╰━━━━━━━━━━━━━━━━━━━
- menu.download}
+ $menu.download}
 ╰━━━━━━━━━━━━━━━━━━━
 
 ╭━━━━━━━━━━━━━━━━━━━
- |  GROUP COMMAND
+ |  GROUP COMMAND ❏
 ╰━━━━━━━━━━━━━━━━━━━
  ${menu.group}
 ╰━━━━━━━━━━━━━━━━━━━
 
 ╭━━━━━━━━━━━━━━━━━━━
- |  OWNER COMMAND
+ |  OWNER COMMAND ❏
 ╰━━━━━━━━━━━━━━━━━━━
  ${menu.owner}
 ╰━━━━━━━━━━━━━━━━━━━
 
 ╭━━━━━━━━━━━━━━━━━━━
- |  CONVERT COMMAND
+ |  CONVERT COMMAND ❏
 ╰━━━━━━━━━━━━━━━━━━━
  ${menu.convert}
 ╰━━━━━━━━━━━━━━━━━━━
 
 ╭━━━━━━━━━━━━━━━━━━━
- |  SERCH COMMAND
+ |  SERCH COMMAND ❏
 ╰━━━━━━━━━━━━━━━━━━━
  ${menu.search}
 ╰━━━━━━━━━━━━━━━━━━━
 
 ╭━━━━━━━━━━━━━━━━━━━
- |  ANIMEGIRL COMMAND
+ |  ANIMEGIRL COMMAND ❏
 ╰━━━━━━━━━━━━━━━━━━━
  ${menu.anime}
 ╰━━━━━━━━━━━━━━━━━━━
 
 ╭━━━━━━━━━━━━━━━━━━━
- |  FUN COMMAND
+ |  FUN COMMAND ❏
 ╰━━━━━━━━━━━━━━━━━━━
  ${menu.fun}
 ╰━━━━━━━━━━━━━━━━━━━
-
-> *Whatsapp Chanel : https://whatsapp.com/channel/0029VakzRXO6rsQw95N67f0v*
-
-> *You Tube Chanel : url*
 
 ᴄʀᴀᴛᴇᴅ ʙʏ ꜱᴇɴᴇꜱʜ
    `
