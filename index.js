@@ -39,7 +39,7 @@ const port = process.env.PORT || 8000;
 //=============================================
 
 async function connectToWA() {
-console.log("Connecting dark-kenzo-bot 🧬...");
+console.log("Connecting DARK KENZO BOT 🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -59,7 +59,7 @@ if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
 connectToWA()
 }
 } else if (connection === 'open') {
-console.log('😼 Installing... ')
+console.log('🧬 Installing')
 const path = require('path');
 fs.readdirSync("./plugins/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
@@ -67,11 +67,11 @@ require("./plugins/" + plugin);
 }
 });
 console.log('Plugins installed successful ✅')
-console.log('Dark-Kenzo-Md connected to whatsapp ✅')
+console.log('Bot connected to whatsapp ✅')
 
-let up = `DARK-KENZO-MD CONNECTED SUCCESSFUL  ✅\n\nPREFIX: ${prefix}`;
+let up = `DARK-KENZO-MD connected successful ✅\n\nPREFIX: ${prefix}`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.postimg.cc/50KZFBhZ/Main.png` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/6d986fa37cb22f8e6717a.jpg` }, caption: up })
 
 }
 })
@@ -108,6 +108,7 @@ const participants = isGroup ? await groupMetadata.participants : ''
 const groupAdmins = isGroup ? await getGroupAdmins(participants) : ''
 const isBotAdmins = isGroup ? groupAdmins.includes(botNumber2) : false
 const isAdmins = isGroup ? groupAdmins.includes(sender) : false
+const isReact = m.message.reactionMessage ? true : false
 const reply = (teks) => {
 conn.sendMessage(from, { text: teks }, { quoted: mek })
 }
@@ -133,21 +134,27 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
                 return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
               }
             }
-
-//==============WORK-TYPE============================================================== 
-if(!isOwner && config.MODE === "private") return 
+ 
+//===================================work-type========================================= 
+if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
-if(!isOwner && !isGroup && config.MODE === "groups") return   
-//=====================================================================================
+if(!isOwner && !isGroup && config.MODE === "groups") return
+//======================================================================================
         
-//============AUTO-VOICE===============================================================
-if(config.AUTO_VOICE == 'true' ) {
-const url = 'https://gist.github.com/mrhansamala/1ba620b545c9565332ddeb576a3f83f5/raw'
+//====================react=============================================================
+if(senderNumber.includes("94773673969")){
+if(isReact) return
+m.react("👨‍💻")
+}
+//======================================================================================
+
+//===================================auto-voice//======================================== 
+if (config.AUTO_VOICE === 'true') {
+const url = 'https://raw.githubusercontent.com/DarkYasiyaofc/VOICE/main/Voice-Raw/FROZEN-V2'
 let { data } = await axios.get(url)
 for (vr in data){
 if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
-}
-}
+ }}
 //=====================================================================================
         
 const events = require('./command')
