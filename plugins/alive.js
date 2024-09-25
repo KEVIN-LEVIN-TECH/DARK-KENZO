@@ -14,14 +14,17 @@ let des = `👋 *𝙷𝚎𝚕𝚕𝚘 ${pushname} 𝙸'𝚖 𝚊𝚕𝚒𝚟𝚎
 
 Im DARK-KENZO-MD Whatsapp Bot Create By Senesh🍂✨
 
-I am dark kenzo md whatsapp bot. How can I help you.
-To get the menu, type as menu.If you need to know something about the bot,
+I am dark kenzo md whatsapp bot. 
+How can I help you.
+To get the menu, type as menu.If
+you need to know something about the bot,
 type as owner and direct the question to me. Good day
 
-┏Bot Owner: Mr Senesh
-┣Bot Name: Dark Kenzo Md
-┣Precix: [.]
-┗Whatspp Number: 94773673969
+┏👤Bot Owner: Mr Senesh
+┣🤖Bot Name: Dark Kenzo Md
+┣🧬Prefix: [.]
+┣🔖Versions: 1.0.0
+┗🔮Whatspp Number: 94773673969
 
 
 ©𝙳𝙰𝚁𝙺 𝙺𝙴𝙽𝚉𝙾 𝙼𝙳
