@@ -23,7 +23,7 @@ try{
 let res = await axios.get('https://api.lolicon.app/setu/v2?num=1&r18=0&tag=lolicon')
 let wm = `🧧 Random loli image
 
-𝙳𝙰𝚁𝙺 𝙺𝙴𝙽𝚉𝙾 v${require("../package.json").version} (Test)\ns𝙳𝙰𝚁𝙺 𝙺𝙴𝙽𝚉𝙾 𝙼𝙳`
+𝙳𝙰𝚁𝙺 𝙺𝙴𝙽𝚉𝙾 v${require("../package.json").version} (Test)\n𝙳𝙰𝚁𝙺 𝙺𝙴𝙽𝚉𝙾 𝙼𝙳`
 await conn.sendMessage(from, { image: { url: res.data.data[0].urls.original }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
